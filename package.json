@@ -1,0 +1,46 @@
+{
+  "name": "dd01-ntr-hotel-mp",
+  "private": true,
+  "version": "1.0.0",
+  "description": "mini program for hotel",
+  "main": "index.js",
+  "keywords": [],
+  "author": "tanhuaendd01 <tanhuaen@300.cn>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development remax build -t wechat -w",
+    "build": "cross-env NODE_ENV=production remax build -t wechat",
+    "start:dev": "cross-env NODE_ENV=development remax build -t wechat -w",
+    "start:stg": "cross-env NODE_ENV=staging remax build -t wechat -w",
+    "start:prod": "cross-env NODE_ENV=production remax build -t wechat -w",
+    "build:dev": "cross-env NODE_ENV=development remax build -t wechat",
+    "build:stg": "cross-env NODE_ENV=staging remax build -t wechat",
+    "build:prod": "cross-env NODE_ENV=production remax build -t wechat",
+    "analyse:prod": "cross-env NODE_ENV=production remax build -t wechat -a",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "mobx": "^5.15.6",
+    "mobx-react-lite": "^2.0.7",
+    "react": "^16.12.0",
+    "remax": "^2.7.7"
+  },
+  "devDependencies": {
+    "@remax/plugin-less": "^1.0.0",
+    "@types/react": "^16.9.16",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.9.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-typescript": "^9.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "prettier": "^2.0.5",
+    "typescript": "^4.0.2"
+  }
+}

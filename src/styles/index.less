@@ -1,0 +1,224 @@
+.container {
+  width: 100%;
+  height: 100%;
+  font-family: PingFangSC;
+  font-size: 16px;
+  color: #303030;
+}
+
+.grey_bg {
+  width: 100%;
+  height: 348rpx;
+  background-color: #3c3e48;
+  margin-bottom: 194rpx;
+
+  .order_box {
+    width: 686rpx;
+    height: 490rpx;
+    padding: 55rpx 40rpx;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 18rpx 38rpx 0 rgba(189, 189, 189, 0.25);
+    margin: auto;
+    margin-top: 56rpx;
+    box-sizing: border-box;
+
+    .hotel_name {
+      font-size: 20px;
+      font-family: PingFangSC;
+      font-weight: bold;
+    }
+
+    .date_range {
+      width: 100%;
+      height: 104rpx;
+      border-radius: 6rpx;
+      // background-color: #fafafc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      .datewrap {
+        font-size: 13px;
+        color: #737373;
+
+        .date {
+          font-size: 18px;
+          font-weight: bold;
+          margin-right: 8rpx;
+          color: #303030;
+          margin-right: 14rpx;
+
+        }
+      }
+
+      .nightnum {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        padding: 6rpx 14rpx;
+        border-radius: 8.5px;
+        border: solid 1px #333333;
+        font-size: 12px;
+        color: #333333;
+
+      }
+    }
+
+    .point_wrap {
+      display: flex;
+      align-items: center;
+      margin: auto;
+      justify-content: center;
+      margin-top: 52rpx;
+      padding: 0 40rpx;
+
+      .count_night {
+        width: 132rpx;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 52rpx;
+        font-size: 13px;
+        border-radius: 26px;
+        border: solid 1rpx #303030;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 24px;
+      }
+
+      .point {
+        width: 34rpx;
+        height: 34rpx;
+      }
+
+      .point:first-child {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAABDxJREFUWAnNWE2IFUcQrpp9iya7qweNiGY9iF7UXDwIHkQhyTUYQ9Cj7hMFf1aJOYrinlV01UDEt3qMCFFyDAkIHgQPXnS9qBdXRfw5+LOJsm+n8lXN9GxPT+/b98SgBU1XVVdV1/RPVfUQfSLA7+OHnKkvoyZtIJLF0F+ENg/tBdpjIn5ENbrKuxv3QLcNbTsiZ3YtpOa7PSTpRlhf2cYMo8TJFarNOs27f3kyk/yMjkhjoI9e889E6QEY65nJYGR8nCg5Rn1ylOsjryPjxmrpiJzesZqaE1cg2T+dgQ74Y1Tr3sh7zt6M6SQxpvLkRP1HmmxeA/ohnFCT/WrP7CoVQHRFTJjTiyQUHfdsPAX+kJifk8h84F+iLfDGqyjDqiSbeX/jkj9Ymci2Q1dC5HNfsMAZt4NpGMZ+532N2wU/R+RkfRVxugnTDaLpbaoC8z/UVVvnb1PJkexgyig049vBfJxm14Z459mXVetljvy6Yy69bR7CB/1UHimoMerjle4A1wq2InY7pOoE01tKurby3nMXS/ItiNzZA3Jq+w1KJy9gdWYH4v3ZfHRY+cWKWJyY+FeDUPWKdnVt6cSJYEKCM5tpcvK3kA96nLo/W6ZxZmpFNFjFnMB2xJyQ4b1zKH1Tx7dsgN4XaM9w165S0tvgwVOvQBeg+nJyYE1km3osSBId9K6vfF9oOsQOZs8RR7pehge+IXlzC/RxTP4d2tqsBw0+DuzXTrbocbaw/poGAsjmta2x3DGR3g0kEBDpMA+eH/L5mRPyJ/a82FZ/3HC9opR8i1v1tz8mw9sOUUqVD6PuZHm2IpbAfJUcxxX1ubYdIo2WTqiCOZmOmHzJQNleMYT5862xLFrwc+RpJU7I+HZMsiQUjNIqZ2doajS3p0EwAFnszoim8jIwj5UZoITWV3gtGXaQQ4mHIQP0IudILAJGDpbdjoidaVl6m8qg6aAK85wjsUljzuGKdgRV+SwnhUZeOEdQWQUgkQircaIjiMprYgzhce4IyrsqLLAE5vMRrHBpH/isaXGVU3kPcnuR7MyPMkdQY3ryU6hmUQ8sYjLX4QziRAvQcciFERan/Yeolta4bgAheBQheIWjrbfI2rs0NJgHNY0n1ausK2FOjPzl28qy8cR96IRnb5T3n1/lzgh0+LKvaLgqybhlR3+MBzEJ934FHlI8/4F2PetBg2/jvoLiVhJUnIAaCmzA1Ipolf4Rs2+xIlnJj2o7BqgnLJXHxmbgmZ7WI1FIjrmnRrEiKtdWhcY9R8IzE5sjy0vY1jYrtJIj5ow+IT52zeq+rKMqPstJGplxsC0IRuKEs4y+3SreqWTOyAUYj1fzTrCTXqt34a3hU0JNVLbGt/tJvPTMS30eouRHtTUEGm/Y9wLoQV+fDtM8N9VqyxXxpy3+BhBqzDAC+4IOZ74D85c/2N8AZ9fv/4//I/8BqgK2tlpWQC8AAAAASUVORK5CYII=') no-repeat center;
+        background-size: contain;
+        margin-right: 24rpx;
+      }
+
+      .point:last-child {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAABG1JREFUWAnNmE1onEUYx5NsEyGlzaFxSbatAVMvtkI+DSVIA+qtSKuVeshBiEfxUL0pFnMQDzYH8Rrp0VJog3gqCgslaMgn1ATFenHdTUjNwY8sbb7W3/9l5mV23tmPhko78O77fP7nmXlmnpl3GxqekNa4nzj6+vpO7O3tjeB7lCfT2Nh4pFQqbUAXePJNTU3ZhYWFu9B1t7oDGRwc7Nje3n4X5HM8J+voYRmbqebm5i9nZ2fXatnXDGR4ePhQsVj8gBG/D9jBWoAB/SYzdqW1tfXz6enpfwL6SFQ1kP7+/j5SMEUQxysB1CsnmBwpOzc/P78Q8mkKCSXr6el5kyBuP4oghCcc4QlXvN9SvkC8Mb4G2RLSO7J1RvoL/B3ef/EWXrX0NaO/0NHRsbK2trYCHbdEakw6NBOtsZVD0KF2xxepVOrG3NzcT44qIgcGBk7t7u6+DvMeGEd8vXgwiqTpJTdNZYGYhblcKR0ATAAwDoBGX7UxoDZS8TFYl0KGYOVYwCftAi5LTXt7+4c4vuY74nSfAEYXFxcnVldXH/j6EC87pv9WJpP5Gf1ZngOeXdvOzs42NlnJ4xkxdUJFKJFjgniLAqU1s69GAbzI7HwdcN6kzpxQnYmjNMUqEYTSEQpiaGjoMD5jzOAIHTzNcw/bLMCTMzMzf7udyr+3t/fFQJoOmn4/ircvIOddZ9HINlpaWj7x5YC+srW1dYdRTiiVPKf1Fi85+pd9H60t4fly22+UGnN2/Bowusy6GHflCoJObyGL0+rqDV2ig1fx/d7V4avFmxgYQT4XzQgjGXEdLK0tamm9lQ5ekzzVgpCp9F8Ze/FR8/GsXP3b1OgU9du6XyeY9ncY0TO+YYiXndaQqzN4667M0EdtIBlfydTmfBn8mYCsoohgRnwluH/4MvhMFAjKRAUEJLGwcNDueJiWsAf3Tx9A/UeBhDoNBQfAPR+kBp+wB7fd91H/NjW6WZU1lMfLBDCAZH1ZNT5kD+6xgE/BBpIPKNM6wFy5ihXgv7uySrTsZO/qDV7alRk6HwXCPs4GlA3mFI1VpmJqJ5RiYZiQfsyvsJwtb4TM1X9cDyg2OnWfdw0ZlSrrsz6gihp2k9gntrKZsTGK2XculjmNf8PH3xjLS0tLp2xqdIO66TqKlhO147IvVycE+AIjuUTH3/D8oLd4yf0g5E/RUlX1g5BqSj/xjDzu0zelaNQKhcK/nZ2dT0GGitZZ7hV3uWMsR8YP8aMrADNxFZf4pLfuzOJnXLK+FR8HIqa7u3ueBTUK2SbeaQcAu0Cgh7u6un7M5/M1L0c6Z9Lp9Kf4XQEnFIRuaKO5XG5L/cSpsZ0+EXdWG4xzi08Eam3MW7f4HKPe4K3PThXBUJ1w3bS1L7JTrrvCih0pGMCvAh68zbsg9dLgFcF72w9C/hUDkdKk6fF+6SkQfXfoys9IxmE3JdtH07fvuHDc7xgfp+qMuMb23wBAzzO9ZRXYtbM0divY3eS8eTT/Blhg9/1//D/yH4FeLoUeqAz3AAAAAElFTkSuQmCC') no-repeat center;
+        background-size: contain;
+        margin-left: 24rpx;
+      }
+
+      .home_line {
+        display: inline-block;
+        width: 120rpx;
+        height: 4rpx;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAACCAYAAACXKMhIAAAAAXNSR0IArs4c6QAAAChJREFUKBVjNDAw+M9AJXDhwgVGSoyipltA7hh1DyI2mBDMUdZwDgEAO8ANkxwPNP4AAAAASUVORK5CYII=') no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .order_btn {
+      width: 606rpx;
+      height: 92rpx;
+      line-height: 92rpx;
+      text-align: center;
+      border-radius: 6rpx;
+      background-color: #3c3e48;
+      font-size: 17px;
+      color: #fff;
+    }
+  }
+}
+
+.section-module {
+  display: flex;
+  width: 100%;
+  margin-top: 86rpx;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 32rpx;
+
+
+  .hotel_card {
+    width: 330rpx;
+    height: 202rpx;
+    border-radius: 8rpx;
+    position: relative;
+
+    .image_bg {
+      width: 330rpx;
+      height: 202rpx;
+      position: relative;
+    }
+
+    .info_title {
+      position: absolute;
+      font-weight: bold;
+      top: 32rpx;
+      left: 32rpx;
+    }
+  }
+}
+
+.info_box {
+  margin-top: 86rpx;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+  width: 100%;
+
+  &+.info-box {
+    margin-top: 80rpx;
+  }
+
+  .title_view {
+    font-size: 48rpx;
+    line-height: 1;
+    font-family: PingFangSC;
+    font-weight: bold;
+    color: #303030;
+  }
+
+  .title_view--subtitle {
+    margin-top: 16rpx;
+    font-family: PingFangSC;
+    font-size: 24rpx;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #999999;
+  }
+
+  .active_info {
+    display: flex;
+    flex-direction: column;
+
+    .active_card {
+      width: 670rpx;
+      height: 376rpx;
+      border-radius: 8rpx;
+      margin-top: 24rpx;
+
+      .active_bg {
+        width: 686rpx;
+        height: 374rpx;
+      }
+
+      .active_title {
+        display: inline-block;
+        white-space: nowrap;
+        width: 670rpx;
+        font-family: PingFangSC;
+        overflow: hidden;
+        font-size: 15px;
+        font-weight: bold;
+        text-overflow: ellipsis;
+        margin: 24rpx 0 16rpx 0;
+      }
+    }
+  }
+}
+
+.num {
+  color: red;
+}
